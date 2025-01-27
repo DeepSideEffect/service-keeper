@@ -1,0 +1,16 @@
+{
+  "name": "service-keeper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No test specified\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@netlify/functions": "^3.0.0",
+    "axios": "^1.7.9"
+  }
+}
