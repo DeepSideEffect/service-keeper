@@ -1,7 +1,7 @@
 const axios = require('axios');
 const { schedule } = require('@netlify/functions');
 
-const handler = async (event, context) => {
+const handler = async (_event, _context) => {
   const res = await axios(`https://api.render.com/v1/services/${process.env.RENDER_SERVICE_ID}/deploys`, {
     method: 'post',
     headers: {
