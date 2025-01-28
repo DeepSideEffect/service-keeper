@@ -18,4 +18,4 @@ const handler = async (_event, _context) => {
 	};
 };
 
-exports.handler = schedule("30 1 * * *", handler); // Exécution quotidienne à 3h30 UTC (soit 4h30 du matin en hiver et 5h30 du matin en été pour la France)
+exports.handler = schedule("0 2 * * *", handler); // Exécution quotidienne à 3h30 UTC (soit 4h30 du matin en hiver et 5h30 du matin en été pour la France)
