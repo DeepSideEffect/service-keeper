@@ -1,9 +1,8 @@
-const webServiceName = 'smart-proxy';
 const axios = require('axios');
 const { schedule } = require('@netlify/functions');
 
 const handler = async (_event, _context) => {
-	await axios.get(`https://${webServiceName}.onrender.com/`);
+	await axios.get(`https://${process.env.RENDER_SERVICE_NAME}.onrender.com/`);
 	return {
 		statusCode: 200,
 		body: 'Service is awake'
